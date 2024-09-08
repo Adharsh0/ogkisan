@@ -1,0 +1,91 @@
+/* New Contracts Section */
+.new-contracts {
+    max-width: 800px;
+    margin: 40px auto; /* Increased margin for spacing */
+    padding: 20px;
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 12px; /* Slightly larger border radius for modern feel */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow for a lifted effect */
+}
+
+.new-contracts h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px; /* Increased font size for better impact */
+    color: #333; /* Dark grey for readability */
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold for emphasis */
+}
+
+.new-contracts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.new-contracts li {
+    background-color: #f9f9f9; /* Slightly off-white background for list items */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.new-contracts li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.new-contracts h3 {
+    font-size: 22px; /* Increased font size for headings */
+    font-family: 'Orbitron', sans-serif;
+    color: #6A5ACD; /* SlateBlue for a modern touch */
+    margin-bottom: 10px;
+    font-weight: 700; /* Bold for emphasis */
+}
+
+.new-contracts p {
+    font-size: 16px;
+    color: #555; /* Darker grey for improved readability */
+    margin-bottom: 15px;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+.new-contracts button {
+    padding: 12px 24px; /* Larger padding for a more prominent button */
+    background-color: #6A5ACD; /* SlateBlue color for the button */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    cursor: pointer;
+    font-size: 16px; /* Font size for readability */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.new-contracts button:hover {
+    background-color: #483D8B; /* Darker SlateBlue on hover */
+    transform: scale(1.05); /* Slightly larger button on hover */
+}
+
+@media (max-width: 600px) {
+    .new-contracts {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+
+    .new-contracts h2 {
+        font-size: 28px; /* Adjust heading size */
+    }
+
+    .new-contracts h3 {
+        font-size: 20px; /* Adjust subheading size */
+    }
+
+    .new-contracts p {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .new-contracts button {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}

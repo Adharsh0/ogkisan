@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e0eec6, #f3f4ed); /* Gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Signup Container */
+.signup-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center; /* Center-align text */
+    border: 2px solid #4caf50; /* Green border */
+}
+
+/* Signup Box Header */
+.signup-header {
+    margin-bottom: 20px;
+    color: #2e7d32; /* Dark green text */
+    font-size: 2rem; /* Larger heading */
+    font-weight: bold;
+    font-family: 'Merriweather', serif; /* Consistent with homepage */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Input Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Dark color for better readability */
+    font-weight: 500;
+}
+
+/* Input Fields */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none; /* Remove default outline */
+}
+
+/* Focus Effect for Input Fields */
+.form-group input:focus {
+    border-color: #66bb6a; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.4); /* Subtle green shadow on focus */
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    color: #fff; /* White text */
+    background-color: #43a047; /* Green background */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effect for Button */
+.submit-button:hover {
+    background-color: #388e3c; /* Slightly darker green */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .signup-container {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .signup-header {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+}

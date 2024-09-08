@@ -1,0 +1,127 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply background color to the entire body */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Lime green section at the top of the page */
+.header1 {
+    background-color: #9cd94e; /* Lime green color */
+    padding: 20px;
+    height: 125px;
+    color: white;
+    text-align: center;
+    width: 100vw; /* Full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* Adjust padding for the main content to account for header */
+.contract-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+}
+
+/* Flexbox layout for contract list */
+.contract-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style for each contract card */
+.contract-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Light grey background */
+    color: black;
+}
+
+/* Image styling within the card */
+.contract-card img.produce-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* General button styling */
+button {
+    background-color: #4CAF50; /* Green color for all buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the form */
+.contract-form, .vegetable-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Uniform styling for all input fields */
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text for better contrast */
+}
+
+/* Table styles */
+.contracts-table, .vegetables-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.contracts-table th, .vegetables-table th, .contracts-table td, .vegetables-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.contracts-table th, .vegetables-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.vegetables-table img.vegetable-image {
+    width: 50px;
+    height: auto;
+}
+
+/* Additional styles for better spacing and readability */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Ensure consistent button styling across different contexts */
+.contract-card button {
+    margin-top: 10px;
+}

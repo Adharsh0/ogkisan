@@ -1,0 +1,88 @@
+
+
+.header {
+    background-color: #9cd94e;
+    display: flex;
+    width: 300%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-left: 45%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}
+
+.logo-text {
+    
+    font-weight: bold;
+    color: white;
+}
+
+.kisan {
+    font-weight: bold;
+    color: #ffc700;
+}
+
+
+.new-contract-btn {
+    background-color:#ffc700;
+    padding: 10px 20px;
+    border: none;
+    /* border-radius: 20px; */
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute; 
+    top: 35px; 
+    right: 10px;
+}
+
+.user-icon {
+    font-size: 24px;
+    color: #000;
+}
+
+
+    language-selector {
+        display: flex;
+        align-items: center; /* Aligns the select dropdown with other elements */
+      }
+      
+      .language-selector select {
+        padding: 8px 12px;
+        margin-left: -250%; /* Added padding for better spacing */
+        border: 1px solid #ddd; /* Light border for a clean look */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Font size for readability */
+        cursor: pointer; /* Pointer cursor on hover */
+        background-color: #fff; /* White background for better contrast */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+      }
+      
+      .language-selector select:hover,
+      .language-selector select:focus {
+        border-color: #9cd94e; /* Highlight border color on hover/focus */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Darker shadow on hover/focus */
+      }
+      
+      .language-selector::before {
+        content: 'Language: '; /* Adds label before the select element */
+        margin-right: 10px; /* Space between label and select */
+        font-size: 16px;
+        color: #333; /* Dark color for readability */
+      }
+      .profile-link {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        margin-left: 260%;
+       
+        border-radius: 20px;
+        
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      .profile-link:hover {
+        background-color:#ddd; /* Hover color */
+      }

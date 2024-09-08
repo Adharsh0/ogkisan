@@ -1,0 +1,21 @@
+.main-page {
+    
+    height: 100vh;
+    display: flex;
+  background-image: url(farbg.jpg);
+  background-position: 70%;
+  background-repeat: no-repeat;
+ 
+  
+    flex-direction: column;
+    justify-content: space-between;  
+    align-items: center; 
+}
+
+
+
+.main-image {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 20px 0; /* Adds spacing above and below the image */
+}

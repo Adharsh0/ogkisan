@@ -1,0 +1,200 @@
+/* General Container Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #f3f4ed; /* Light background to represent a natural feel */
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: #3a6b35; /* Dark green color representing growth and agriculture */
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif; /* Rustic serif font for a more earthy feel */
+}
+
+/* Homepage Main Container */
+.homepage-container {
+    text-align: center;
+    padding: 120px 20px; /* Added padding to compensate for navbar */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e0eec6, #f3f4ed); /* Subtle gradient background */
+    position: relative;
+    color: #333;
+}
+
+/* Header Styles */
+.homepage-header {
+    background-color: rgba(255, 255, 255, 0.9); /* Soft white background with some transparency */
+    color: #2c5f2d;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    transform: translateY(-10px);
+    animation: float 3s ease-in-out infinite; /* Floating effect */
+    transition: transform 0.4s ease;
+}
+
+.homepage-header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for emphasis */
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Content Box */
+.homepage-content {
+    max-width: 700px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    margin-top: 20px;
+    animation: slideUp 1s ease-out; /* Slide up effect */
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.homepage-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    opacity: 0;
+    animation: popIn 1s forwards; /* Pop-in effect */
+}
+
+/* Button Colors */
+.login-button {
+    background-color: #7cb342; /* Light green for login */
+}
+
+.signup-button {
+    background-color: #ffa500; /* Orange for signup */
+}
+
+.about-button {
+    background-color: #3f51b5; /* Blue for "More About Us" */
+}
+
+/* Pop-in Animation */
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover Effects */
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    background-color: #3a6b35; /* Dark green footer */
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info, .social-media {
+    flex: 1;
+    margin: 20px;
+}
+
+.contact-info h2, .social-media h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2); /* Hover effect to enlarge icons */
+}

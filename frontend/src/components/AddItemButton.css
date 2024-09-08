@@ -1,0 +1,28 @@
+.add-item-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add-item-btn {
+    background-color: #45a049; /* Base button color */
+    padding: 12px 24px; /* Adjusted padding for a more balanced look */
+    border-radius: 25px; /* Slightly reduced border-radius for a modern touch */
+    font-size: 16px; /* Font size for the button text */
+    border: none; /* Removes default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Align items center vertically */
+    gap: 12px; /* Space between icon and text */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+.add-item-btn:hover {
+    background-color: #45a049; /* Lighter color on hover */
+    transform: scale(1.05); /* Slightly scales up the button on hover */
+}
+
+.add-item-btn i {
+    font-size: 22px; /* Larger icon size for better visibility */
+    color: #333; /* Icon color to match text */
+}
